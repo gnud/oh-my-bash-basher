@@ -1,0 +1,8 @@
+#! bash oh-my-bash.module
+
+# Try to load nvm only if command not already available
+if ! _omb_util_command_exists basher; then
+  export PATH="$HOME/.basher/bin:$PATH"
+  eval "$(basher init - bash)" 
+fi
+
